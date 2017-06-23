@@ -16,7 +16,7 @@ int cgiMain()
 	int status = 0;
 
 	char ch;
-//	fprintf(cgiOut, "Content-type:text/html;charset=utf-7\n\n");
+	fprintf(cgiOut, "Content-type:text/html;charset=utf-8\n\n");
 	if(!(fd = fopen(headname, "r"))){
 		fprintf(cgiOut, "Cannot open file, %s\n", headname);
 		return -1;
